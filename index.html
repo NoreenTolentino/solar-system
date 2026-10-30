@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar System in Pure CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Solar System</h1>
+    <p>Eight planets, one sun, zero JavaScript. Hover anywhere to pause, then point at a planet.</p>
+  </header>
+ 
+  <main>
+    <ol class="system">
+      <li class="sun" aria-hidden="true"></li>
+ 
+      <!-- mula sa pinakamalapit sa araw -->
+      <li class="orbit" style="--r:.17; --t:8s; --o:-2s; --p:.014; --skin:#a39a90">
+        <div class="planet" tabindex="0">
+          <span class="body keep"></span>
+          <span class="tag keep"><b>Mercury</b><small>year: 88 days</small></span>
+        </div>
+      </li>
+ 
+      <li class="orbit" style="--r:.25; --t:14s; --o:-9s; --p:.022; --skin:#e6bd82">
+        <div class="planet" tabindex="0">
+          <span class="body keep"></span>
+          <span class="tag keep"><b>Venus</b><small>year: 225 days</small></span>
+        </div>
+      </li>
+ 
+      <li class="orbit" style="--r:.34; --t:20s; --o:-4s; --p:.024; --skin:
+        radial-gradient(circle at 30% 40%, #5aa862 0 15%, transparent 16%),
+        radial-gradient(circle at 68% 64%, #5aa862 0 12%, transparent 13%), #2f6fd0">
+        <div class="planet" tabindex="0">
+          <span class="body keep"></span>
+          <i class="moon"></i>
+          <span class="tag keep"><b>Earth</b><small>year: 365 days</small></span>
+        </div>
+      </li>
+ 
+      <li class="orbit" style="--r:.43; --t:30s; --o:-18s; --p:.018; --skin:#c4572f">
+        <div class="planet" tabindex="0">
+          <span class="body keep"></span>
+          <span class="tag keep"><b>Mars</b><small>year: 687 days</small></span>
+        </div>
+      </li>
+ 
+      <li class="orbit belt" style="--r:.5; --t:220s"></li>
+ 
+      <li class="orbit" style="--r:.6; --t:52s; --o:-30s; --p:.056; --skin:
+        linear-gradient(180deg, #a77d57 0 12%, #e6cba6 12% 25%, #a37650 25% 39%, #efd9b8 39% 53%, #b4835a 53% 67%, #dfc29b 67% 81%, #a97d58 81%)">
+        <div class="planet" tabindex="0">
+          <span class="body keep"></span>
+          <span class="tag keep"><b>Jupiter</b><small>year: 12 earth years</small></span>
+        </div>
+      </li>
+ 
+      <li class="orbit" style="--r:.74; --t:74s; --o:-11s; --p:.044; --skin:#dcc48f">
+        <div class="planet saturn" tabindex="0">
+          <span class="ring keep"></span>
+          <span class="body keep"></span>
+          <span class="tag keep"><b>Saturn</b><small>year: 29 earth years</small></span>
+        </div>
+      </li>
+ 
+      <li class="orbit" style="--r:.86; --t:104s; --o:-60s; --p:.03; --skin:#8fd6d8">
+        <div class="planet" tabindex="0">
+          <span class="body keep"></span>
+          <span class="tag keep"><b>Uranus</b><small>year: 84 earth years</small></span>
+        </div>
+      </li>
+ 
+      <li class="orbit" style="--r:.97; --t:136s; --o:-90s; --p:.03; --skin:#3f5fd8">
+        <div class="planet" tabindex="0">
+          <span class="body keep"></span>
+          <span class="tag keep"><b>Neptune</b><small>year: 165 earth years</small></span>
+        </div>
+      </li>
+    </ol>
+  </main>
+ 
+  <footer>Speeds are sped up and sizes are not to scale.</footer>
+</body>
+</html>
